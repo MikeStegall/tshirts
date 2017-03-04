@@ -1,0 +1,58 @@
+//========================================================
+// Constants
+//========================================================
+
+$maxWidth: 1200px;
+$tabletWidth: 960px;
+$mobileWidth: 600px;
+
+//========================================================
+//element rules
+//========================================================
+
+html{
+  box-sizing: border-box;
+}
+*,*:before, *:after {
+  box-sizing: inherit;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+}
+
+//========================================================
+// class rules
+//========================================================
+
+.wrapper{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: $maxWidth;
+}
+
+.shirts{
+  border: 3px solid blue;
+  flex: 1;
+}
+
+//========================================================
+// Mobile devise
+//========================================================
+
+@media only screen and (min-width: $mobileWidth) and (max-width: $tabletWidth) {
+  .wrapper{
+    background-color: yellow;
+  }
+
+}
+
+@media only screen and (max-width: $mobileWidth) {
+  .wrapper {
+    background-color: blue;
+  }
+
+}
